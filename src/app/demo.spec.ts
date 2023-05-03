@@ -4,8 +4,11 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from "./app.component";
 
 describe('LightswitchComp', () => {
+
     it('#clicked() should toggle #isOn', () => {
+      
       const comp = new AppComponent();
+
       expect(comp.isOn)
         .withContext('off at first')
         .toBe(false);
