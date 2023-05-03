@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WalletComponent } from './component/wallet/wallet.component';
+import { ExponentPipe } from './pipes/exponent.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WalletComponent
+    WalletComponent,
+    ExponentPipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,
