@@ -11,5 +11,9 @@ export class LoginService {
   getValue(){
     return this.authService.getValue();
   }
-  
+
+  isLoggedIn(){
+    return this.authService.getAuthValue();
+  }
+
 }

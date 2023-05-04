@@ -24,7 +24,7 @@ describe('LoginService', () => {
     // create proxy object
     const authServiceSpy = jasmine.createSpyObj('AuthService', ['getValue']);
     // train the proxy object method
-    authServiceSpy.getValue.and.returnValue('Spy auth getValue');
+    authServiceSpy.getValue.and.returnValue('Spy auth value');
 
     service = new LoginService(authServiceSpy);
 

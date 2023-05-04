@@ -5,8 +5,19 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  constructor() { }
+  constructor() {
+    let user = { 'id': 101, 'name': 'techM' };
+    localStorage.setItem('user', JSON.stringify(user));
+  }
+
   getValue(){
     return 'Actual Auth value';
   }
+
+  // will return true if local storage exists else false
+  getAuthValue() {
+    return localStorage.getItem('user') != null ? true : false;
+  }
+
+
 }
