@@ -13,6 +13,4 @@ describe('ExponentPipe', () => {
     expect(pipe.transform(2,2)).toBe(4);
 
   });
-
-
 });

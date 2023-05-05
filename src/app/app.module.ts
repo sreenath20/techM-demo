@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { WalletComponent } from './component/wallet/wallet.component';
 import { ExponentPipe } from './pipes/exponent.pipe';
 import { SortPipe } from './pipes/sort.pipe';
+import { BannerComponent } from './component/banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WalletComponent,
     ExponentPipe,
-    SortPipe
+    SortPipe,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

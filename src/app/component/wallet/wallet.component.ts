@@ -18,8 +18,7 @@ export class WalletComponent {
     this.balance += amount;
   }
 
-  withDraw(amount: number):boolean { // not handling insufficent case
-
+  withDraw(amount: number): boolean { // not handling insufficent case
     if (this.balance < amount)
       return false;
     this.balance -= amount;

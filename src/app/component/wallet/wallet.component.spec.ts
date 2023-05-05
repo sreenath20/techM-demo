@@ -49,5 +49,4 @@ describe('WalletComponent', () => {
     expect(component.checkBalance()).toBe(100);
   });
 
-
 });
