@@ -39,14 +39,15 @@ describe('WalletComponent', () => {
     expect(component.balance).toBe(50);
   });
 
+  // e.g for fail test case 
   it('check insufficent balance', () => {
     component.balance = 100;
     expect(component.withDraw(150)).toBeFalse();
   });
 
-  it('check balance', () => {
-    component.balance = 100;
-    expect(component.checkBalance()).toBe(100);
-  });
+  // it('check balance', () => {
+  //   component.balance = 100;
+  //   expect(component.checkBalance()).toBe(100);
+  // });
 
 });

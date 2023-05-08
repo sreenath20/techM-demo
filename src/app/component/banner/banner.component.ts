@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class BannerComponent {
 
-  title = "My Banner";
+  title:string="TechM"
   name :string="India";
+  
+  constructor(){
+    this.title = "My Banner";
+  }
 }

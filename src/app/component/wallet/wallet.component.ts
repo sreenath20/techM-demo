@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { elementAt } from 'rxjs';
 
 @Component({
   selector: 'app-wallet',
   templateUrl: './wallet.component.html',
   styleUrls: ['./wallet.component.css']
 })
-export class WalletComponent {
+export class WalletComponent implements OnInit{
+
+
 
   balance: number = 0;
 
@@ -14,6 +17,15 @@ export class WalletComponent {
   //3. Check balance
   //4. 
 
+  ngOnInit(): void {
+    let accountType="CUR";
+    if(accountType=="SB"){
+
+      this.balance=500;
+    }
+    else this.balance=1000; // for current account
+  }
+  
   addBalance(amount: number) {
     this.balance += amount;
   }
