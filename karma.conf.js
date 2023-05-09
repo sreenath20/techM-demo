@@ -43,14 +43,14 @@ module.exports = function (config) {
         }
       }
     },
-    //reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml'],
    // reporters: ['dots', 'kjhtml'],
-   reporters: ["spec"],
-   specReporter:{
-    supressPassed:false,
-    supressFailed:false,
-    supressSkipped:true    
-   },
+  //  reporters: ["spec"],
+  //  specReporter:{
+  //   supressPassed:false,
+  //   supressFailed:false,
+  //   supressSkipped:true    
+  //  },
 
    browsers: ['Chrome'],
     restartOnFileChange: true

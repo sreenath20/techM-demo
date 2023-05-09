@@ -7,6 +7,7 @@ import { WalletComponent } from './component/wallet/wallet.component';
 import { ExponentPipe } from './pipes/exponent.pipe';
 import { SortPipe } from './pipes/sort.pipe';
 import { BannerComponent } from './component/banner/banner.component';
+import { QuoteComponent } from './component/quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BannerComponent } from './component/banner/banner.component';
     WalletComponent,
     ExponentPipe,
     SortPipe,
-    BannerComponent
+    BannerComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
