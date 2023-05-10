@@ -7,22 +7,29 @@ import { QuoteService } from 'src/app/service/quote.service';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
-export class QuoteComponent implements OnInit{
+export class QuoteComponent implements OnInit {
 
-  quote:any;
-  errorMessage='';
-  constructor(private quoteService:QuoteService){}
- 
+  quote: any;
+  errorMessage = '';
+  constructor(private quoteService: QuoteService) { }
+
   ngOnInit(): void {
-   this.quote = this.quoteService.getQuote();
-  }
+    this.quote = this.quoteService.getQuote().subscribe(
+      {
+        next: (data) => { this.quote = data },
+        error: (error) => {
+          this.errorMessage = error.message || error.toString();
+        }
+      }
 
-  getQuote(){
-    this.quote = this.quoteService.getQuote().pipe(
-      startWith('...'),
-      catchError((err:any)=>
-        this.errorMessage= err.message || err.toString())
     );
   }
+
+  // getQuote() {
+  //   this.quote = this.quoteService.getQuote().pipe(
+  //     catchError((err: any) =>
+  //       this.errorMessage = err.message || err.toString())
+  //   );
+  // }
 
 }
