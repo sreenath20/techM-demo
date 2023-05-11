@@ -8,6 +8,7 @@ import { ExponentPipe } from './pipes/exponent.pipe';
 import { SortPipe } from './pipes/sort.pipe';
 import { BannerComponent } from './component/banner/banner.component';
 import { QuoteComponent } from './component/quote/quote.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { QuoteComponent } from './component/quote/quote.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
