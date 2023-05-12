@@ -6,11 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+//  title = 'my-app';
 
   isOn = false; // 
 
   clicked() { this.isOn = !this.isOn; }
+
+  title = "TechM";
+
+  changeTitle(newTitle: string) {
+    this.title = newTitle;
+
+  }
 
   
 }

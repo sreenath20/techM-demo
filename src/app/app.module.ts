@@ -9,6 +9,8 @@ import { SortPipe } from './pipes/sort.pipe';
 import { BannerComponent } from './component/banner/banner.component';
 import { QuoteComponent } from './component/quote/quote.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ParentComponent } from './component/parent/parent.component';
+import { ChildComponent } from './component/child/child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     ExponentPipe,
     SortPipe,
     BannerComponent,
-    QuoteComponent
+    QuoteComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
