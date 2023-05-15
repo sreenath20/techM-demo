@@ -3,7 +3,7 @@ import { ChildComponent } from '../child/child.component';
 
 import { ParentComponent } from './parent.component';
 
-fdescribe('ParentComponent', () => {
+describe('ParentComponent', () => {
   let component: ParentComponent;
   let fixture: ComponentFixture<ParentComponent>;
   let para:HTMLElement;

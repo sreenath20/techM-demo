@@ -11,6 +11,7 @@ import { QuoteComponent } from './component/quote/quote.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ParentComponent } from './component/parent/parent.component';
 import { ChildComponent } from './component/child/child.component';
+import { LoginComponent } from './component/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ChildComponent } from './component/child/child.component';
     BannerComponent,
     QuoteComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

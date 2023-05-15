@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ChildComponent } from './child.component';
 
-fdescribe('ChildComponent', () => {
+describe('ChildComponent', () => {
   let component: ChildComponent;
   let fixture: ComponentFixture<ChildComponent>;
   let para: HTMLElement;

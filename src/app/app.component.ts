@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +13,16 @@ export class AppComponent {
 
   clicked() { this.isOn = !this.isOn; }
 
+  constructor(private router?:Router){}
+
   title = "TechM";
 
   changeTitle(newTitle: string) {
     this.title = newTitle;
 
   }
-
+  gotoWallet(){
+    //this.router.navigateByUrl('/wallet');
+  }
   
 }
